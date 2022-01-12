@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scroll snap</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100%;
+        }
+        .container{
+            width: 500px;
+            height: 100vh;
+            background: chartreuse;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+             
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            background: red;
+            animation: left-to-right 3s  forwards infinite alternate;
+        }
+        @keyframes left-to-right{
+            0%{
+                transform: rotateY(90deg);
+                border-radius: 50%;
+            }
+            25%{
+                transform: scale(1.2);
+                font-size: 20px;
+            }
+            50%{
+                transform: rotate(360deg);
+                clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+            }
+            75%{
+                transform: rotate(90deg);
+                clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+            }
+            100%{
+                transform: rotate(60deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contaier">
+            <div>Hello</div>
+    </div>
+</body>
+</html>

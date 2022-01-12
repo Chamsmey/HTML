@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover hidded</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            font-family: sans-serif;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform:translate(-50%,-50%);
+            margin: 0;
+            padding: 0;
+            background: aqua;
+        }
+        /* .contant{
+            width: 100px;
+            height: 50px;
+         
+            margin: auto;
+            
+        }
+        button{
+            color: #000;
+            width: 100%;
+            height: 100%;
+            background: none;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            background: none;
+            border: 1px solid;
+            transition: 1s;
+        
+        }
+        button::before{
+           
+            background: coral;
+            content: " ";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            z-index: -1;
+            transition: 1s;
+        }
+        button:hover::before{
+            color: #fff;
+          
+            width: 180%;
+            transition: 1s ;
+           
+
+        }
+        button:hover{
+            color: #fff;
+        } */
+        .icon{
+
+            box-shadow:2px 2px .5rem  rgba(0,0,0,.3);
+            background: white;
+            height: 5vh;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-radius: 60px;
+        }
+        .icon:hover input{
+            width: 400px;
+        }
+       .icon input{
+            border: none;
+            outline: none;
+            width: 0;
+            font-weight: 400;
+            background: transparent;
+            transition: .8s;
+        }
+        .icon .fa{
+            font-size: 1.6rem;
+        }
+    </style> 
+</head>
+<body>
+    <!-- <div class="contant">
+      <button>Hover me</button>
+    </div> -->
+    <div class="icon">
+        <input type="text" placeholder="Seach">
+        <i class="fa fa-search"></i>
+
+    </div>
+</body>
+</html>

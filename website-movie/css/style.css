@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    font-family: sans-serif;
+    background: #000;
+}
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+ 
+}
+.menu{
+    
+    display: flex;
+
+}
+.main-content{
+  
+    width: 50%;
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-gap:10px;
+    padding: 10px;
+}
+.container .box{
+    height: 30vh;
+}
+.box-primary{
+    background: blue;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #000;
+}
+.sidebar-left{
+    margin-top:10px ;
+    width: 20%;
+    background: tomato;
+    height: 300px;
+}
+
+.sidebar-right{
+    width:30% ;
+    background: red;
+}
+.menu li{
+    padding: 10px;
+    list-style: none;
+}
+.menu li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+option{
+    text-transform: uppercase;
+}
+img{
+    margin: auto;
+    width: 100%;
+}
+select{
+    border-radius: 2px;
+
+    color: white;
+}
+.link a{
+   color: white;
+}
+.link{
+    padding-left: 10px;
+}
+.menu{
+    background: brown;
+}
+.menu li:hover{
+    background: tomato;
+}
+
+.link li{
+    padding: 10px;
+}
+.main-content .card{
+    background: #000;
+}
+
+.card-title h1{
+    font-weight: 50;
+    font-size:1rem;
+    color: rgb(143, 142, 142);
+}
